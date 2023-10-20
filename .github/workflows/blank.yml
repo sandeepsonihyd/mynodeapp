@@ -1,6 +1,8 @@
+name: CI and CD for NodeJS Project 
 on:
-  workflow_dispatch:
-
+  push: 
+    branches:
+    - main
 env:
   AZURE_WEBAPP_NAME: dssnodejs   
   AZURE_WEBAPP_PACKAGE_PATH: '.' 
